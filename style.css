@@ -86,7 +86,7 @@ body {
   font-size: 1.4rem;
 }
 
-footer > h6{
+footer > a {
   position: absolute;
   bottom: 80%;
   left: 50%;
