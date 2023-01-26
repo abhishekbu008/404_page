@@ -1,0 +1,139 @@
+/* font-family: 'Inconsolata', monospace;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Space Mono', monospace; */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  line-height: 1.7;
+  color: #333;
+  min-width: 100vw;
+  height: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(46rem, 1fr));
+  grid-gap: 10px;
+}
+
+
+.title {
+  display: inline-block;
+  margin: 4rem 7.7rem;
+  font-family: "Inconsolata", monospace;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: -0.08em;
+}
+
+.main-img > img {
+  width: 70%;
+  display: block;
+  margin: 4rem 7.7rem;
+}
+
+
+.content__heading {
+  font-family: 'Space Mono', monospace;
+  font-size: 6.4rem;
+  letter-spacing: -0.035em;
+}
+
+.content__text {
+  width: 60%;
+  font-family: 'Space Mono', monospace;
+  font-weight: 400;
+  font-size: 2.4rem;
+  color: #4f4f4f;
+  margin: 3.5rem 0;
+  letter-spacing: -0.035em;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 3rem;
+  padding: 2rem 4rem;
+  background-color: #333;
+  text-decoration: none;
+  font-family: 'Space Mono', monospace;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  border: none;
+  color: #FFF;
+}
+
+.footer {
+  position: relative;
+  margin: 8rem 0 1rem 0;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+footer > h6{
+  position: absolute;
+  bottom: 80%;
+  left: 50%;
+  transform: translate(-50%, 40%);
+}
+
+
+/* MEDIA QUERIES */
+/* bp-largest = 1200px = 75em*/
+/* bp-large = 900px = 56.25em */
+/* bp-medium = 600px = 37.5em */
+/* bp-small = 400px = 25em*/
+
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .main-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .content__heading {
+    margin: 3rem 4rem;
+    line-height: 1.5;
+  }
+
+  .content__text {
+    margin: 3rem 4rem;
+  }
+
+  .btn {
+    margin: 4rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  html {
+    font-size: 35%;
+  }
+}
